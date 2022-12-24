@@ -24,7 +24,7 @@ public class Ermakov_2_11 {
             System.out.println("Equation has only 1 root: " + "\n" +
                     "X1 = " + x1);
         } else {
-            System.out.println("Equation has not the roots");
+            System.out.println("Equation hasn't got the roots");
         }
     }
 }
