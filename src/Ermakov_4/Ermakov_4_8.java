@@ -8,14 +8,14 @@ public class Ermakov_4_8 {
         Scanner scanner = new Scanner(System.in);
         String userInput;
         while (true) {
-            try {
                 userInput = scanner.nextLine();
                 if (userInput.equals("end")) {
                     break;
                 }
+            try {
                 System.out.println(evenOrOdd(Integer.parseInt(userInput)));
             } catch (NumberFormatException e) {
-                System.out.println("You didn't enter number or \"end\". Try again");
+                System.out.println("You didn't enter a number or \"end\". Try again");
             }
         }
     }
