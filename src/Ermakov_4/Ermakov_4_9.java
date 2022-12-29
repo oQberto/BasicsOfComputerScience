@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Ermakov_4_9 {
+
     static String[] array1 = null;
     static String[] array2 = null;
     public static ArrayList<String> vampiresNumber() {
