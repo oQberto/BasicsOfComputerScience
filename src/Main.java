@@ -1,7 +1,7 @@
-import Ermakov_4.Ermakov_4_2;
+import Ermakov_4.Ermakov_4_3;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Ermakov_4_2.findSum());
+        Ermakov_4_3.multiplicationChart(3);
     }
 }
