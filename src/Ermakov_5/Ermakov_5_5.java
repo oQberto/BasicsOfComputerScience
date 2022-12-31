@@ -28,12 +28,11 @@ public class Ermakov_5_5 {
     }
 
     private static int indexOf(int[] array, int num) {
-        int index = -1;
         for (int i = 0; i < array.length; i++) {
             if (array[i] == num) {
-                index = i;
+                return i;
             }
         }
-        return index;
+        return -1;
     }
 }
