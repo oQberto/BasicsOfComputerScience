@@ -1,7 +1,13 @@
-import Ermakov_4.Ermakov_4_3;
+import Ermakov_5.Ermakov_5_1;
+import Ermakov_5.Ermakov_5_2;
+
+import java.util.Arrays;
 
 public class Main {
+    private final static Ermakov_5_1 ermakov_5_1 = new Ermakov_5_1();
+    private final static int[] testArray = ermakov_5_1.makeArray();
     public static void main(String[] args) {
-        Ermakov_4_3.multiplicationChart(3);
+        System.out.println(Arrays.toString(testArray));
+        System.out.println(Ermakov_5_2.printUserElement(testArray, 5));
     }
 }
