@@ -1,7 +1,7 @@
 package Ermakov_5;
 
 public class Ermakov_5_1 {
-    public int[] makeArray() {
+    public int[] doArray() {
         int[] defaultArray = new int[9];
         for (int i = 0; i < defaultArray.length; i++) {
             defaultArray[i] = (int) (Math.random() * 10);
