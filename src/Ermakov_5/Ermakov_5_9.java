@@ -16,6 +16,6 @@ public class Ermakov_5_9 {
                 temp = Math.max(temp, k);
             }
         }
-        return String.valueOf(temp);
+        return "Maximum number that meets maximum times: " + temp;
     }
 }
