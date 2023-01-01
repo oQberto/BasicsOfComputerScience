@@ -7,7 +7,7 @@ public class Ermakov_5_11_6 {
         return convert1dTo2d(array, convert2dTo1d(array));
     }
 
-    private static int[] convert2dTo1d(int[][] array) {
+    public static int[] convert2dTo1d(int[][] array) {
         int[] intermediateArray = new int[20];
         int temp = 0;
         for (int[] ints : array) {

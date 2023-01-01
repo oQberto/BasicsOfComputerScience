@@ -1,8 +1,6 @@
 import Ermakov_5.Ermakov_5_1;
 import Ermakov_5.Ermakov_5_10;
-import Ermakov_5.Ermakov_5_11.Ermakov_5_11_6;
-
-import java.util.Arrays;
+import Ermakov_5.Ermakov_5_11.Ermakov_5_11_9;
 
 public class Main {
     private final static Ermakov_5_1 ermakov_5_1 = new Ermakov_5_1();
@@ -12,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         printTwoDimensionalArray(testArray2);
         System.out.println();
-        printTwoDimensionalArray(Ermakov_5_11_6.sortFromMaxToMin(testArray2));
+        System.out.println(Ermakov_5_11_9.moreReps(testArray2));
     }
 
     private static void printTwoDimensionalArray(int[][] array) {
