@@ -22,32 +22,32 @@ public class Ermakov_6_4 {
         return array;
     }
     
-    private static void merge(int[] array1, int[] array2, int[] targetArray) {
-        int array1MinIndex = 0;
-        int array2MinIndex = 0;
-        int targetArrayMinIndex = 0;
+    private static void merge(int[] firstHalf, int[] secondHalf, int[] originalArray) {
+        int firstHalfMinIndex = 0;
+        int secondHalfMinIndex = 0;
+        int originalArrayMinIndex = 0;
 
-        while (array1MinIndex < array1.length && array2MinIndex < array2.length) {
-            if (array1[array1MinIndex] <= array2[array2MinIndex]) {
-                targetArray[targetArrayMinIndex] = array1[array1MinIndex];
-                array1MinIndex++;
+        while (firstHalfMinIndex < firstHalf.length && secondHalfMinIndex < secondHalf.length) {
+            if (firstHalf[firstHalfMinIndex] <= secondHalf[secondHalfMinIndex]) {
+                originalArray[originalArrayMinIndex] = firstHalf[firstHalfMinIndex];
+                firstHalfMinIndex++;
             } else {
-                targetArray[targetArrayMinIndex] = array2[array2MinIndex];
-                array2MinIndex++;
+                originalArray[originalArrayMinIndex] = secondHalf[secondHalfMinIndex];
+                secondHalfMinIndex++;
             }
-            targetArrayMinIndex++;
+            originalArrayMinIndex++;
         }
 
-        while (array1MinIndex < array1.length) {
-            targetArray[targetArrayMinIndex] = array1[array1MinIndex];
-            array1MinIndex++;
-            targetArrayMinIndex++;
+        while (firstHalfMinIndex < firstHalf.length) {
+            originalArray[originalArrayMinIndex] = firstHalf[firstHalfMinIndex];
+            firstHalfMinIndex++;
+            originalArrayMinIndex++;
         }
 
-        while (array2MinIndex < array2.length) {
-            targetArray[targetArrayMinIndex] = array2[array2MinIndex];
-            array2MinIndex++;
-            targetArrayMinIndex++;
+        while (secondHalfMinIndex < secondHalf.length) {
+            originalArray[originalArrayMinIndex] = secondHalf[secondHalfMinIndex];
+            secondHalfMinIndex++;
+            originalArrayMinIndex++;
         }
     }
 }
