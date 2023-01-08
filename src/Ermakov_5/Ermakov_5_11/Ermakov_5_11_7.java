@@ -14,6 +14,6 @@ public class Ermakov_5_11_7 {
     }
 
     private static int averageOf2dArray(int[][] array) {
-        return Ermakov_5_11_4.arraySum(array) / 20;
+        return Ermakov_5_11_4.arraySum(array) / (array.length * array[0].length);
     }
 }
