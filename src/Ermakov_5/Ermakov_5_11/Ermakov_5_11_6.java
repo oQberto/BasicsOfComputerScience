@@ -8,7 +8,7 @@ public class Ermakov_5_11_6 {
     }
 
     public static int[] convert2dTo1d(int[][] array) {
-        int[] intermediateArray = new int[20];
+        int[] intermediateArray = new int[array.length * array[0].length];
         int temp = 0;
         for (int[] ints : array) {
             for (int anInt : ints) {
