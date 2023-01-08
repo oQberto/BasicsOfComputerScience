@@ -12,6 +12,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(Arrays.toString(testArray));
         Ermakov_6_3.bubbleSort(testArray);
+        System.out.println();
         System.out.println(Arrays.toString(testArray));
     }
 
